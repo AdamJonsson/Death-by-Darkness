@@ -24,9 +24,6 @@
     <ClCompile Include="Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SpriteSheet.cpp">
-      <Filter>Source Files\Graphics</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h">
