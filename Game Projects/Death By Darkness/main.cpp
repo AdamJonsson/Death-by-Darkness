@@ -4,6 +4,7 @@
 #include <SDL.h>
 #undef main
 
+//test
 bool running = true;
 int fps = 0, ups = 0;
 

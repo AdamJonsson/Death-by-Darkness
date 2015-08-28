@@ -1,9 +1,23 @@
-﻿Build started 2015-08-28 11:55:33.
-     1>Project "C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\Death By Darkness\Death By Darkness.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         Death By Darkness.vcxproj -> C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\Debug\Death By Darkness.exe
-     1>Done Building Project "C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\Death By Darkness\Death By Darkness.vcxproj" (Build target(s)).
+﻿Build started 28-Aug-15 12:06:46.
+     1>Project "C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Death By Darkness\Death By Darkness.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include" /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include" /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include" /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include" /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include" /I"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include" /I"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include" /I"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include" /I"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Keyboard.cpp main.cpp Screen.cpp SpriteSheet.cpp Time.cpp
+         Time.cpp
+         SpriteSheet.cpp
+         Screen.cpp
+         main.cpp
+         Keyboard.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Debug\Death By Darkness.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86" /LIBPATH:"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86" /LIBPATH:"C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86" SDL2.lib SDL2main.lib SDL2_mixer.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Debug\Death By Darkness.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Debug\Death By Darkness.lib" /MACHINE:X86 Debug\Keyboard.obj
+         Debug\main.obj
+         Debug\Screen.obj
+         Debug\SpriteSheet.obj
+         Debug\Time.obj
+         LINK : C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Debug\Death By Darkness.exe not found or not built by the last incremental link; performing full link
+     1>LINK : fatal error LNK1104: cannot open file 'SDL2.lib'
+     1>Done Building Project "C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\Death By Darkness\Death By Darkness.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.04
+Time Elapsed 00:00:01.82
