@@ -13,15 +13,10 @@ public:
 	*/
 	bool runEvery(int ms, int channel);
 
-	//<--------------------Beskrivning-------------------->
-	//Denna function returnerar sannt 60 gånger per sekund
-	bool runSixtyTimesPerSek(int channel);
-
 	~Time();
 
 private: 
 	int lastClock[1000];
-	int updates[1000], updatesCap[1000];
 
 };
 

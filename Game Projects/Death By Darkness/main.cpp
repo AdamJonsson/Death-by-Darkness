@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Time.h"
+#include <SDL.h>
+#undef main
 
 bool running = true;
 int fps = 0, ups = 0;
@@ -14,8 +16,11 @@ void render() {
 
 }
 
-int main() {
+int main(int argc, char* argv[]) {
 
+	SDL_Init(SDL_INIT_VIDEO);
+	SDL_Window* window = NULL;
+	window = SDL_CreateWindow("Death By Darkness", 100, 100, 200, 200, SDL_WINDOW_SHOWN);
 
 	while (running) {
 
@@ -36,6 +41,8 @@ int main() {
 		fps++;
 
 	}
+
+	return 0;
 
 }
 
