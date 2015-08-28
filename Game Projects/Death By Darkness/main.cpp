@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 
 	SDL_Init(SDL_INIT_VIDEO);
 	SDL_Window* window = NULL;
-	window = SDL_CreateWindow("Death By Darkness", 0, 0, 10, 10, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("Death By Darkness", 0, 0, 100, 100, SDL_WINDOW_SHOWN);
 
 	while (running) {
 
