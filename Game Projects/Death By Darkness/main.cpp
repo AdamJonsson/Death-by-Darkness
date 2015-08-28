@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Time.h"
+#include "Keyboard.h"
 #include <SDL.h>
 #undef main
 
@@ -20,9 +21,14 @@ int main(int argc, char* argv[]) {
 
 	SDL_Init(SDL_INIT_VIDEO);
 	SDL_Window* window = NULL;
-	window = SDL_CreateWindow("Death By Darkness", 100, 100, 200, 200, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("Death By Darkness", 0, 0, 10, 10, SDL_WINDOW_SHOWN);
 
 	while (running) {
+
+		Keyboard* keyboard = new Keyboard();
+
+		keyboard->update();
+		if (keyboard->esc) return 0;
 
 		//Skriver ut ups och fps
 		if (time.runEvery(999, 1)) {
