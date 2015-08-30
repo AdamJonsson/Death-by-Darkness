@@ -19,30 +19,8 @@ void Entity::render() {
 
 void Entity::update() {
 
-	lastX = x;
-	lastY = y;
-
-	//The grabing code
-	mouse.update();
-	if (mouse.leftButton && mouse.x > x && mouse.y > y && mouse.x < x + w && mouse.y < y + h && !mouseGrab) {
-		grabPointX = mouse.x - x;
-		grabPointY = mouse.y - y;
-		mouseGrab = true;
-	}
-	if (!mouse.leftButton) mouseGrab = false;
-
-	if (mouseGrab) {
-		speedX = 0;
-		speedY = 0;
-		x = mouse.x - grabPointX;
-		y = mouse.y - grabPointY;
-	}
-	
 	x += speedX;
 	y += speedY;
-
-	speedX = x - lastX;
-	speedY = y - lastY;
 
 	//Collition i collitionsrutan
 	if (boxCollision) {
@@ -69,8 +47,7 @@ void Entity::update() {
 	}
 
 	//Graviation
-	if (gravity != 0) speedY += gravity;
-	else speedY = 0;
+	if (gravity != 0 && !bottomCollistion) speedY += gravity;
 	if (gravity != 0) speedX /= (abs(gravity) / 20) + 1;
 	else speedX = 0;
 	
@@ -101,6 +78,11 @@ void Entity::setBoxcollision(int x, int y, int w, int h) {
 	boxW = w;
 	boxH = h;
 	boxCollision = true;
+}
+
+void Entity::setOrigin(int originX, int originY) {
+	x = originX - w / 2;
+	y = originY - h / 2;
 }
 
 Entity::~Entity()

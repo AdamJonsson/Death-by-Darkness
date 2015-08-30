@@ -1,6 +1,6 @@
 #pragma once
 #include "Sprite.h"
-#include "Mouse.h"
+#include "Keyboard.h"
 class Entity
 {
 public:
@@ -11,6 +11,7 @@ public:
 
 	double w, h, x, y;
 	double speedX = 0, speedY = 0;
+
 	double rotation = 0;
 	double gravity = 0;
 	double bouncy = 0;
@@ -20,6 +21,7 @@ public:
 	int grabPointX, grabPointY;
 
 	void setBoxcollision(int x, int y, int w, int h);
+	void setOrigin(int x, int y);
 	bool boxCollision = false;
 	int boxX, boxY, boxW, boxH;
 
@@ -27,7 +29,7 @@ public:
 
 private:
 	Sprite* theSprite;
-	Mouse mouse;
+	Keyboard keyboard;
 
 	int lastX = 0;
 	int lastY = 0;

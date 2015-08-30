@@ -16,17 +16,33 @@ double speedX = 10, speedY = 5;
 Time time;
 Screen *screen = new Screen;
 Keyboard* keyboard = new Keyboard;
+Mouse mouse;
+
 Sprite *redBoxSprite = new Sprite(screen->renderer, 100, 100, 200, 200, "Data/Sprites/redBox.png");
+Sprite *redBoxSprite2 = new Sprite(screen->renderer, 50, 50, 100, 100, "Data/Sprites/redBox.png");
 Entity *redBox = new Entity(redBoxSprite);
+Entity *redBox2 = new Entity(redBoxSprite2);
 
 
 void update() {
+
+	mouse.update();
+
 	redBox->update();
+	redBox2->update();
+
+	redBox2->setOrigin(mouse.x, mouse.y);
+
+	if (keyboard->left) redBox->speedX -= 5;
+	if (keyboard->right) redBox->speedX += 5;
+	if (keyboard->up) redBox->speedY -= 5;
+	if (keyboard->down) redBox->speedY += 5;
 }
 
 void render() {
 	screen->clearScreen();
 	redBox->render();
+	redBox2->render();
 	screen->printScreen();
 }
 
