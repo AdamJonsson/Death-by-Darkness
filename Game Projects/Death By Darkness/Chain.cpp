@@ -4,6 +4,7 @@
 Chain::Chain(Entity *entityHead, Entity *entityBody, int headConnectX, int headConnectY, int bodyConnectX, int bodyConnectY, int play)
 	:body(entityBody), head(entityHead), bodyX(bodyConnectX), bodyY(bodyConnectY), headX(headConnectX), headY(headConnectY), freeMove(play)
 {
+
 }
 
 void Chain::update() {

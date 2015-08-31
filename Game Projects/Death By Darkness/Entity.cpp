@@ -24,23 +24,23 @@ void Entity::update() {
 
 	//Collition i collitionsrutan
 	if (boxCollision) {
-		if (x + w > boxW) {
-			x = boxW - w;
+		if (x + w > boxW + boxX) {
+			x = boxW + boxX - w - 1;
 			rightCollision = true;
 		}
 		else rightCollision = false;
 		if (x < boxX) {
-			x = boxX;
+			x = boxX + 1;
 			leftCollision = true;
 		}
 		else leftCollision = false;
-		if (y + h > boxH) {
-			y = boxH - h;
+		if (y + h > boxH + boxY) {
+			y = boxH  + boxY - h;
 			bottomCollistion = true;
 		}
 		else bottomCollistion = false;
 		if (y < boxY) {
-			y = boxY;
+			y = boxY + 1;
 			topCollision = true;
 		}
 		else topCollision = false;
@@ -65,6 +65,7 @@ void Entity::update() {
 		}
 		else speedX = 0;
 	}
+
 
 	theSprite->x = x;
 	theSprite->y = y;
