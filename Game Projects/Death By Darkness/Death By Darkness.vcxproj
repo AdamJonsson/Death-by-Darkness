@@ -74,11 +74,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\include;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\Users\Namn\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\Users\wred1\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_image-devel-2.0.0-VC\SDL2_image-2.0.0\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2_mixer-devel-2.0.0-VC\SDL2_mixer-2.0.0\lib\x86;C:\Users\Administrator\Source\Repos\Death-by-Darkness\Game Projects\SDL2\SDL2-devel-2.0.3-VC\SDL2-2.0.3\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -125,25 +125,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chain.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="SpriteSheet.cpp" />
     <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chain.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="Sprite.h" />
-    <ClInclude Include="SpriteSheet.h" />
     <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
