@@ -5,7 +5,7 @@ class Projectile {
 public:
 	Projectile(Entity* entity);
 	~Projectile();
-
+	//NowIHaveChangedSomethingInThisFileSoThenItShouldWork(HopeFully)
 protected:
 	double angle;
 	double x, y;
