@@ -3,7 +3,7 @@
 
 
 Sprite::Sprite(SDL_Renderer *renderer, int width, int height, int xPos, int yPos, std::string filePath)
-	:x(xPos), y(yPos), w(width), h(height), theRenderer(renderer)
+	:x(xPos), y(yPos), width(width), height(height), theRenderer(renderer)
 {
 	image = IMG_LoadTexture(renderer, filePath.c_str());
 }
@@ -17,8 +17,8 @@ void Sprite::render() {
 void Sprite::update() {
 	rect.x = x;
 	rect.y = y;
-	rect.h = h;
-	rect.w = w;
+	rect.h = height;
+	rect.w = width;
 	if (rotation != 0) {
 		thePoint.x = xPoint;
 		thePoint.y = yPoint;

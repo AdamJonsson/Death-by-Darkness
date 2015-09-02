@@ -8,7 +8,7 @@ public:
 
 	void render();
 
-	double w, h, x, y;
+	double width, height, x, y;
 	double rotation = 0;
 	int xPoint = 0, yPoint = 0;
 
