@@ -5,6 +5,7 @@
 #include "Entity.h"
 #include "Screen.h"
 #include "Sprite.h"
+#include "Weapon.h"
 #include <stdlib.h>
 #include <SDL.h>
 #undef main
@@ -16,17 +17,17 @@ int fps = 0, ups = 0;
 Time time;
 Screen *screen = new Screen;
 Keyboard* keyboard = new Keyboard;
-Sprite* redBallS = new Sprite(screen, 100, 100, screen->width / 2, screen->height / 2, "Data/Sprites/redBall.png");
+Sprite* redBallS = new Sprite(screen, 100, 300, screen->width / 2, screen->height / 2, "Data/Sprites/redBall.png");
 Entity* redBallE = new Entity(redBallS);
-
+Weapon* basicWeapon = new Weapon(redBallS);
 
 void update() {
 	redBallE->update();
-} //BLASJAJASLJDAKLSJLKFSDAJLF
+}
 
 void render() {
 	screen->clearScreen();
-	redBallE->render();
+	basicWeapon->render();
 	screen->printScreen();
 }
 
