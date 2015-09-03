@@ -12,12 +12,11 @@ using namespace std;
 
 bool running = true;
 int fps = 0, ups = 0;
-double speedX = 10, speedY = 5;
 
 Time time;
 Screen *screen = new Screen;
 Keyboard* keyboard = new Keyboard;
-Sprite* redBallS = new Sprite(screen->renderer, 100, 100, screen->width / 2, screen->height / 2, "Data/Sprites/redBall.png");
+Sprite* redBallS = new Sprite(screen, 100, 100, screen->width / 2, screen->height / 2, "Data/Sprites/redBall.png");
 Entity* redBallE = new Entity(redBallS);
 
 

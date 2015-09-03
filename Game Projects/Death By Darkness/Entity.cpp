@@ -6,8 +6,8 @@ Entity::Entity(Sprite* sprite)
 {
 	x = sprite->x;
 	y = sprite->y;
-	width = sprite->width;
-	height = sprite->height;
+	w = sprite->w;
+	h = sprite->h;
 }
 
 void Entity::render() {
@@ -15,10 +15,17 @@ void Entity::render() {
 }
 
 void Entity::update() {
+
+	speedY += gravity / 10;
+	speedX /= (gravity / 5) + 1;
+
+	x += speedX;
+	y += speedY;
+
 	theSprite.x = x;
 	theSprite.y = y;
-	theSprite.width = width;
-	theSprite.height = height;
+	theSprite.w = w;
+	theSprite.h = h;
 }
 
 Entity::~Entity()

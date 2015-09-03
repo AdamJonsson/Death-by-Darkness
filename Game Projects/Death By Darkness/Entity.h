@@ -8,9 +8,10 @@ public:
 	void render();
 	void update();
 
-	double width, height;
-	double x, y, gravity; 
-	double rotation, rotationX, rotationY;
+	double w, h, x, y;
+
+	double gravity = 1;
+	double speedX = 0, speedY = 0;
 
 private:
 	Sprite theSprite;
