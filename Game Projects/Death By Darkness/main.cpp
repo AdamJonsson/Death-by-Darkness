@@ -22,7 +22,7 @@ Entity* redBallE = new Entity(redBallS);
 
 void update() {
 	redBallE->update();
-}
+} //BLASJAJASLJDAKLSJLKFSDAJLF
 
 void render() {
 	screen->clearScreen();
@@ -32,6 +32,7 @@ void render() {
 
 int main(int argc, char* argv[]) {
 
+	redBallE->gravity = 9.82;
 
 	while (running) {
 

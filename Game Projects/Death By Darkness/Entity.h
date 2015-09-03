@@ -10,7 +10,7 @@ public:
 
 	double w, h, x, y;
 
-	double gravity = 1;
+	double gravity = 0;
 	double speedX = 0, speedY = 0;
 
 private:
