@@ -10,6 +10,7 @@ Weapon::Weapon(Sprite* sprite)
 	y = 500;
 }
 
+
 void Weapon::update() {
 
 	mouse.update();
